@@ -64,6 +64,47 @@ Esperamos que este mini curso inspire vocês a continuarem explorando o universo
 
 > _“Sozinhos vamos mais rápido, mas juntos vamos mais longe.”_ 🚀
 
+---
+
+# 🤖 Organizador de Pastas com IA
+
+Este repositório inclui um script simples em Python que organiza arquivos em subpastas
+com base em categorias. Quando a variável `OPENAI_API_KEY` está configurada, o script
+usa a API da OpenAI para sugerir a melhor categoria. Sem a chave, ele usa regras locais
+por extensão de arquivo.
+
+## ✅ Requisitos
+
+- Python 3.10+
+
+## ▶️ Como usar
+
+Dry-run (não move arquivos):
+
+```bash
+python organizador_ai.py ~/Downloads
+```
+
+Aplicar mudanças:
+
+```bash
+python organizador_ai.py ~/Downloads --apply
+```
+
+Com IA (OpenAI):
+
+```bash
+OPENAI_API_KEY=seu_token python organizador_ai.py ~/Downloads --apply
+```
+
+## 🔧 Personalização
+
+Você pode definir categorias personalizadas:
+
+```bash
+python organizador_ai.py ~/Downloads --categories "Imagens,Documentos,Projetos,Outros"
+```
+
 
 # Nomes
 
